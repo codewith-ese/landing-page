@@ -141,8 +141,8 @@ nav a:hover {
 
 
 .about-text {
-    /* flex: 1;
-    min-width: 300px; */
+   
+    min-width: 300px;
     display: block;
     padding: 20px;
 }
