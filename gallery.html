@@ -3,115 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
+    <title> Image Gallery| Monday Eseinone </title>
+    <meta name="description" content=" A Home page by Monday Eseinone, an online Student at Brigham Young University 2024.">
+    <meta name="author" content="Monday Erirore Eseinone">
+    
+    <link rel="stylesheet" href="styles/style.css">
 
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-           /* position: sticky; */
-            position: static;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #3e8e41;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-
-        footer nav {
-            margin-bottom: 10px;
-        }
-
-        footer nav a {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
-
-        @media (max-width: 1024px) {
-            .gallery {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            nav a {
-                padding: 5px 10px;
-            }
-
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery img {
-                max-width: 100%;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Code with-ese Gallery</h1>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="index.html#features">Features</a>
-                <a href="index.html#about">About</a>
+                <a href="about.html">About</a>
                 <a href="index.html#contact">Contact</a>
                 <a href="gallery.html">Gallery</a>
             </nav>
@@ -132,18 +43,61 @@
             <img src="images/home7.jpg" alt="Gallery Image 9">
         </div>
     </section>
-
     <footer>
         <div class="container">
             <nav>
                 <a href="index.html">Home</a>
                 <a href="index.html#features">Features</a>
-                <a href="index.html#about">About</a>
+                <a href="about.html">About</a>
                 <a href="index.html#contact">Contact</a>
                 <a href="gallery.html">Gallery</a>
             </nav>
             <p>&copy; 2024 Company Name. All rights reserved.</p>
         </div>
+              <!--   addition footers information -->
+              <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Code With-Ese Solutions</h3>
+                    <p>We equipt our clients with the best web, mobile, and transformative technology solutions, designed to meet their goals.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Useful Links</h3>
+                    <a href="#">About us</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Ese Work Drive</a>
+                    <a href="#">Business E-mail</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <p>No. 18, Ademola Close, Ikeja, Lagos, Nigeria.</p>
+                    <p>Email: ebconceptdigital@gmail.com.</p>
+                    <p>Phone: +234 (0) 704-448-4120</p>
+                    <p>Phone: +234 (0) 807-523-6542</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/monday.eseinone/">
+                            <img src="images/facebook-icon.webp" alt="facebook icon ">
+                        </a>
+                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">
+                            <img src="images/linkedin-icon.webp" alt="Linkedin icon ">
+                        </a>
+                        <a href="https://www.instagram.com/code_with_ese/">
+                            <img src="images/instagram-icon.webp" alt="instagram icon ">
+                        </a>
+                    </div>
+                </div>
+            </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav');
+            const menuIcon = document.querySelector('.menu-icon');
+            nav.classList.toggle('active');
+            menuIcon.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

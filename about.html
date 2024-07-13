@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home| Monday Eseinone Professional Landing Page </title>
-    <meta name="description" content=" A Professional Landing Page by Monday Eseinone, an online Student at Brigham Young University 2024.">
+    <title> Image Gallery| Monday Eseinone </title>
+    <meta name="description" content=" A Home page by Monday Eseinone, an online Student at Brigham Young University 2024.">
     <meta name="author" content="Monday Erirore Eseinone">
+    
     <link rel="stylesheet" href="styles/style.css">
+
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Code with-ese</h1>
+            <h1>Company Name</h1>
             <div class="menu-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -19,38 +21,36 @@
             </div>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="#features">Features</a>
+                <a href="index.html#features">Features</a>
                 <a href="about.html">About</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html#contact">Contact</a>
                 <a href="gallery.html">Gallery</a>
             </nav>
         </div>
     </header>
 
-    <section class="hero" id="home">
-        <div class="container"> 
-                <h1>Welcome to Our Professional Landing Page</h1>
-                <p>Your success starts here. Join us and grow your business.</p>
-                <a href="gallery.html" class="cta-button">Get Started</a>
-                <img id="home-img" src="images/bryan000.jpg" alt="home page image for background"> 
-        
+    <section class="about-section container">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                Welcome to the about me section! I am a passionate professional dedicated to [Your Field or Interest]. With years of experience in [Your Industry or Expertise], I have developed a deep understanding and a knack for [Specific Skills or Attributes].
+            </p>
+            <p>
+                My journey began when [Brief Background or Origin Story]. Since then, I have been committed to [Your Mission or Goals]. I believe in [Your Beliefs or Values] and strive to [Your Objectives or Aspirations].
+            </p>
+            <p>
+                When I am not working, you can find me [Your Hobbies or Interests]. I love to [Additional Personal Interests or Activities], and I am always looking for new ways to grow and learn.
+            </p>
+            <p>
+                Thank you for visiting my page. Feel free to explore more about my work and get in touch if you have any questions or opportunities for collaboration.
+            </p>
+            <a href="contact.html" class="cta-button">Contact Me</a>
+        </div>
+        <div class="about-image">
+            <img src="images/happy-1.webp" alt="Business Owner">
         </div>
     </section>
 
-    <section class="features container" id="features">
-        <div class="feature">
-            <h2>Feature One</h2>
-            <p>Highlight some amazing details about this feature.</p>
-        </div>
-        <div class="feature">
-            <h2>Feature Two</h2>
-            <p>Highlight some amazing details about this feature.</p>
-        </div>
-        <div class="feature">
-            <h2>Feature Three</h2>
-            <p>Highlight some amazing details about this feature.</p>
-        </div>
-    </section>
 
     <footer>
         <div class="container">
@@ -100,7 +100,7 @@
                 </div>
             </div>
     </footer>
-    
+
     <script>
         function toggleMenu() {
             const nav = document.querySelector('header nav');
