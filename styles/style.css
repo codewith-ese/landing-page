@@ -169,7 +169,9 @@ nav a:hover {
 }
 
 .about-text .cta-button{
-    margin: 5px 200px;
+    position: relative;
+    top: 0;
+    left: 45%;
  
 }
 
