@@ -21,6 +21,10 @@ header {
     margin: auto;
 }
 
+.container h2{
+    text-align: center;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -134,25 +138,24 @@ nav a:hover {
     transition: 0.3s;
 }
 
-.about-section {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px 20px;
-    gap: 20px;
-}
+
 
 .about-text {
-    flex: 1;
-    min-width: 300px;
+    /* flex: 1;
+    min-width: 300px; */
+    display: block;
+    padding: 20px;
 }
 
 .about-text h2 {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .about-text p {
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    margin: 30px;
 }
 
 .about-text .cta-button {
@@ -164,14 +167,12 @@ nav a:hover {
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s;
-    margin-top: 20px;
+    
     
 }
 
 .about-text .cta-button{
-    position: relative;
-    top: 0;
-    left: 45%;
+    align-items: center;
  
 }
 
@@ -179,23 +180,42 @@ nav a:hover {
     background-color: steelblue;
 }
 
-.about-image {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
+
+
+
+/* mmmmmmmmmm */
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.about-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.about-image h2 {
+    margin-bottom: 20px;
+    text-align: center;
 }
+.about-image img {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+   
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
 /* about css ends here */
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 15px;
     margin-bottom: 20px;
 }
 
@@ -315,6 +335,14 @@ footer nav a {
     }
 }
 
+
+@media (max-width: 1024px) {
+    .about-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
 @media (max-width: 768px) {
     nav {
         display: none;
@@ -366,8 +394,5 @@ footer nav a {
             transform: translateY(0);
         }
     }
-    .about-section {
-        flex-direction: column;
-        align-items: center;
-    }
+
 }
