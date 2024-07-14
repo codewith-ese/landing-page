@@ -1,9 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* 
+:root {
+    --primary-color: #fff;
+    --secondary-color: #061028;
+    --accent1-color: #8f8073;
+    --accent2-color: #eae6e5;
+  
+    --heading-font: '______', serif;
+    --paragraph-font: '______', serif;
+  
+    --nav-background-color: #eae6e5;
+    --nav-link-color: #8fcb9b;
+    --nav-hover-link-color: #12130f;
+    --nav-hover-background-color: #5b9279;
+  } */
 
-body {
+* body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Pacifico";
+    font-weight: bold;
+    font-style: normal;
+
     margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
 }
+/* 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+} */
 
 header {
     background-color: steelblue;
@@ -13,6 +40,34 @@ header {
     position: static;
     top: 0;
     z-index: 1000;
+    height: 150px;
+}
+
+.logo-box {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+	margin: 0 0.2rem 0 1rem;
+	width: 100px;
+	height: 70px;
+    padding-top: 0;
+    
+}
+
+.logo-box img {
+    width: 70px;
+    padding-top: 0;
+    margin-top: 0;
+    border-radius: 15px;
+}
+
+
+section img {
+  /*  width: 300px; 
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 0; */
+    box-shadow: 0 0 10px rgb(8, 2, 2);
 }
 
 .container {
@@ -27,9 +82,10 @@ header {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+    font-size: 1.2rem;
 }
 
 nav a {
@@ -141,10 +197,10 @@ nav a:hover {
 
 
 .about-text {
-   
+    margin: 0;
     min-width: 300px;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
 
 .about-text h2 {
@@ -159,7 +215,7 @@ nav a:hover {
 }
 
 .about-text .cta-button {
-    display: inline-block;
+  /*  display: inline-block; */
     padding: 10px 20px;
     color: white;
     background-color: #ff5722;
@@ -173,6 +229,11 @@ nav a:hover {
 
 .about-text .cta-button{
     align-items: center;
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
  
 }
 
@@ -187,20 +248,27 @@ nav a:hover {
     gap: 10px;
     margin-bottom: 5px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 5px 30px 0 30px;
+}
+
+.about-image{
+    margin: 10px 40px 0 40px;
+    text-align: center;
 }
 
 .about-image h2 {
     margin-bottom: 20px;
     text-align: center;
 }
+
 .about-image img {
     width: 100%;
     margin: auto;
-    padding-top: 20px;
+    padding: 0;
     height: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    border-radius: 10px;
    
 }
 
@@ -330,7 +398,25 @@ footer nav a {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+    .about-image{
+        margin: 10px 40px 0 40px;
+        text-align: center;
+    }
+    
 }
+
+
+@media (max-width: 600px) {
+    .about-image{
+        margin: 10px 10px 8px 10px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    
+}
+
 
 
 @media (max-width: 1024px) {
@@ -393,3 +479,30 @@ footer nav a {
     }
 
 }
+
+
+.text-block {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.67);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+@media (max-width: 1020px) {
+    .text-block {
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.67);
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding: 30px;
+        margin: auto;
+        max-width: 70%;
+        box-shadow: 2px 1px 8px 2px wheat;
+      }  
+}
+
