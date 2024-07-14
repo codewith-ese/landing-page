@@ -493,7 +493,7 @@ footer nav a {
 @media (max-width: 1020px) {
     .text-block {
         position: absolute;
-        top: 200px;
+        top: 350px;
         left: 30%;
         background-color: rgba(0, 0, 0, 0.67);
         color: white;
@@ -509,7 +509,7 @@ footer nav a {
 @media (max-width: 480px) {
     .text-block {
         position: absolute;
-        top: 200px;
+        top: 350px;
         left: 10px;
         background-color: rgba(0, 0, 0, 0.67);
         color: white;
