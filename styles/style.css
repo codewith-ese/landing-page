@@ -494,15 +494,15 @@ footer nav a {
 @media (max-width: 1020px) {
     .text-block {
         position: absolute;
-        top: 350px;
-        left: 30%;
+        top: 360px;
+        left: 70px;
         background-color: rgba(0, 0, 0, 0.67);
         color: white;
         padding-left: 10px;
         padding-right: 10px;
         padding: 30px;
         margin: auto;
-        max-width: 50%;
+        max-width: 80%;
         box-shadow: 2px 1px 8px 2px wheat;
       }  
 }
@@ -510,7 +510,7 @@ footer nav a {
 @media (max-width: 480px) {
     .text-block {
         position: absolute;
-        top: 350px;
+        top: 360px;
         left: 20px;
         background-color: rgba(0, 0, 0, 0.67);
         color: white;
