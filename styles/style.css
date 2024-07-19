@@ -59,6 +59,19 @@ header {
     padding-top: 0;
     margin-top: 0;
     border-radius: 15px;
+    box-shadow: 2px 4px 8px #000000;
+}
+
+@media (max-width: 480px) {
+    .logo-box img {
+        width: 50px;
+        height: 50px;
+        padding-top: 0;
+        margin-top: 0;
+        box-shadow: 2px 4px 8px #000000;
+        border-radius: 15px;
+    }
+    
 }
 
 
@@ -124,6 +137,7 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+
 .hero img {
     width: 300px;
     height: auto;
@@ -139,6 +153,9 @@ nav a:hover {
     font-size: 1.2em;
     margin: 20px 0 0;
 }
+
+
+
 
 .cta-button {
     display: inline-block;
@@ -444,7 +461,7 @@ footer nav a {
         width: 100%;
         text-align: center;
         background-image: url(../images/happy-2.webp);
-        background-repeat: no-repeat;
+        background-repeat:round;
     }
 
     nav a {
