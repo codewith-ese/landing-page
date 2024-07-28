@@ -522,8 +522,8 @@ footer nav a {
 
 .social-icons img {
     padding: 5px 5px;
-    width: 30px;
-    box-shadow: 3px 2px 3px 5px rgba(0, 0, 0, 0.856);
+    width: 40px;
+    /* box-shadow: 3px 2px 1px  rgba(249, 238, 238, 0.856); */
     border-radius: 30px;
 }
 
