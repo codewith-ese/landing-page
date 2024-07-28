@@ -193,8 +193,26 @@ nav a:hover {
     background-color: rgb(255, 249, 241);
     box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.751);
     margin: 10px;
+    transition: transform 0.3s;
 }
 
+
+.feature:hover {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(7, 66, 114);
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.751);
+    margin: 10px;
+    transform: scale(1.05);
+}
+
+.feature p:hover {
+    transform: scale(1.05);
+    font-size: 20px;
+    color: wheat;
+}
 .feature h2 {
     font-size: 1.5em;
     margin: 0 0 10px;
@@ -208,6 +226,58 @@ nav a:hover {
     font-family: profontwindowsregular;
 }
 
+
+@media (max-width: 680) {
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    .feature {
+        flex: 1;
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+        background-color: rgb(255, 249, 241);
+        box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.751);
+        margin: 10px;
+        transition: transform 0.3s;
+    }
+    
+    
+    .feature:hover {
+        flex: 1;
+        width: 95%;
+        padding: 20px;
+        text-align: center;
+        background-color: rgb(7, 66, 114);
+        box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.751);
+        margin: auto;
+        transform: scale(5.05);
+    }
+    
+    .feature p:hover {
+        transform: scale(1.05);
+        font-size: 20px;
+        color: wheat;
+    }
+    .feature h2 {
+        font-size: 1.5em;
+        margin: 0 0 10px;
+        font-family: profontwindowsregular, "Brealy Hand", cursive;
+       
+    }
+    
+    .feature p {
+        font-size: 1em;
+        margin: 0;
+        font-family: profontwindowsregular;
+    }
+    
+    
+}
 /* Index Hero and Feature css Ends here  */
 
 
@@ -404,7 +474,7 @@ footer nav a {
     grid-gap: 10px;
     padding: 4px 40px 4px  4px;
     font-family: "Poppins", sans-serif;
-    background-color: rgb(7, 66, 114);
+    /* background-color: rgb(7, 66, 114);  */
     }
 
 .copyright-d-item {
@@ -420,7 +490,7 @@ footer nav a {
 .copyright-d-item p {
     display: block;
     padding: 1px 20px;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
 }
 /* 
@@ -464,7 +534,7 @@ footer nav a {
         grid-gap: 0;
         padding: 10px;
         font-family: "Poppins", sans-serif;
-        background-color: rgb(7, 66, 114);
+        /* background-color: rgb(7, 66, 114); */
         margin-bottom: 10px;
     }
     .copyright-d h3 {
@@ -501,11 +571,11 @@ footer nav a {
         margin-bottom: 10px;
         color: #757575;
         font-family: "Poppins", sans-serif;
-        font-size: 18px;
+        font-size: 20px;
     }
     .footer-column p,
     .footer-column a {
-        font-size: 12px;
+        font-size: 20px;
         color: wheat;
         text-align: justify;
         text-decoration: none;
@@ -687,12 +757,15 @@ footer nav a {
 }
 
 .card-body .time_display{
+   
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.751);
     padding-top: 5px;
     padding-bottom: 5px;
     /*border: 2px solid rgb(1, 1, 1); */
     background-color: rgb(7, 66, 114);
     height: 50px; border-radius: 5px;
     align-items: center;
+    
     
     }
 
@@ -705,7 +778,7 @@ footer nav a {
       }
       h2{
         color: rgb(224, 150, 14);
-        font-size: 22px;
+        font-size: 24px;
         align-items: center;
         text-align: center;
         text-shadow: 1px 2px  1px rgba(0, 0, 0, 0.751);
